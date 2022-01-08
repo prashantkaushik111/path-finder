@@ -7,7 +7,9 @@
     <title>Document</title>
     <script src="index.js" defer> </script>
     <style>
-        
+        body {
+            background-color: #ddeedd;
+        }
         td {
             width: 1rem;
             height: 1rem;
@@ -19,27 +21,28 @@
             align-items: flex-end;
         }
         #start{
-            width: 4.5rem;
-            height: 2rem;
-            margin: 1.25rem;
-            font-size: x-large;
+            width: 3.2rem;
+            height: 2.0rem;
+            align-self: center;
+            margin: 1rem;
+            font-size: medium;
             background-color: aqua;
         }
         #cancel{
-            width: 5.5rem;
+            width: 3.9rem;
             height: 2rem;
-            margin: 1.25rem;
-            font-size: x-large;
+            align-self: center;
+            font-size: medium;
             background-color: rgb(236, 69, 47);
         }
         #select-algo {
             width: 5.5rem;
-            margin-left: 1.25rem;
+            margin-left: 0.6rem;
             font-size: large;
         }
         .align-select {
             align-self: center;
-            margin-left: 1.25rem;
+            margin-left: 0.5rem;
         }
         #align-select {
             display: none;
@@ -57,7 +60,7 @@
     <div class="main-body">
         <div class = "main-item">
     <span id="head-bar">
-    <h1 id="matrix-head">Select Source</h1> 
+    <h2 id="matrix-head">Select Source</h2> 
     <span  id="align-select" class="align-select">
         <label for="select-algo" style="font-size: large; font-weight: bold;">Select Algo:</label>
     <select id="select-algo">
