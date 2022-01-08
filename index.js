@@ -24,8 +24,8 @@ startButton.addEventListener('click', ()=> {
 cancelButton.addEventListener('click', ()=> {
     window.location.reload();
 });
-let delX = [-1,-1,-1,0,1,1,1,0];
-let delY = [1,0,1,1,1,0,-1,-1];
+let delX = [-1,0,1,0];
+let delY = [0,1,0,-1];
 function isValid(a,b,c,d) {
     if((a < 0) || (b < 0) || (a>=c) || (b>=d)) {
         return false;
@@ -50,7 +50,7 @@ async function dfsUtil(i, j) {
             }, 100);
         });
     }
-    for(let k=0; k <8; k++) {
+    for(let k=0; k <4; k++) {
         const dx = i + delX[k];
         const dy = j + delY[k];
         let result = false;
@@ -108,7 +108,7 @@ async function bfsUtil(i, j) {
                 }, 100);
             });
         }
-        for(let k = 0; k <8; k++) {
+        for(let k = 0; k <4; k++) {
             const dx = enq[0] + delX[k];
             const dy = enq[1] + delY[k];
             console.log('aa',dx, dy)
