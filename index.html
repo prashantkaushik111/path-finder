@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer> </script>
+    <style>
+        td {
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            margin: 0px;
+        }
+        #head-bar {
+            display: flex;
+            align-items: flex-end;
+        }
+        #start{
+            width: 70px;
+            height: 30px;
+            margin: 20px;
+            font-size: x-large;
+            background-color: aqua;
+        }
+        #cancel{
+            width: 90px;
+            height: 30px;
+            margin: 20px;
+            font-size: x-large;
+            background-color: rgb(236, 69, 47);
+        }
+        #select-algo {
+            width: 90px;
+            margin-left: 20px;
+            font-size: large;
+        }
+        .align-select {
+            align-self: center;
+            margin-left: 20px;
+        }
+        #align-select {
+            display: none;
+        }
+        .main-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <div class = "main-item">
+    <span id="head-bar">
+    <h1 id="matrix-head">Select Source</h1> 
+    <span  id="align-select" class="align-select">
+        <label for="select-algo" style="font-size: large; font-weight: bold;">Select Algo:</label>
+    <select id="select-algo">
+        <option>DFS</option> 
+        <option>BFS</option>
+    </select>
+    </span>
+    
+    <button id="start" disabled> Start </button>
+    <button id="cancel" > Reload </button>
+   
+    </span>
+   <table id="path-find"> 
+   </table>
+</div>
+</div>
+</body>
+</html>
